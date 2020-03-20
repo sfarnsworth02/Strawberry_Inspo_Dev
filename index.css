@@ -1,11 +1,18 @@
 /* Color Palette: 
-    #4d7606 (green), 
+    #727029 (green), 
     #f1ece0 (cream), 
-    #f49487 (muted pink), 
-    #bb2e2b (red pink), 
-    #43081a (merlot) 
+    #DF967D (muted pink), 
+    #D04437 (medium pink),
+    #A21C14 (red), 
+    #451708 (merlot) 
 */
 
-
+body {
+    background-color: #f1ece0;
+    color: #451708;
+    font-size: 12px;
+    margin: 50px;
+    font-family: 'Indie Flower', cursive;
+}
 
 
