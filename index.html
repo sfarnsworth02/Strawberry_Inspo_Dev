@@ -13,12 +13,13 @@
             <span>
                 <img class="headerImage" 
                 src="images/strawberry bowl.jpg" />
-                <h1>Best Things About Strawberries</h1>
+                <h1>Berry Dev</h1>
             </span>
             <nav>
-                <a href="#">Style</a>
-                <a href="#">Content</a>
-                <a href="#">Function</a>
+                <p id="newBerry">Some of my favorite berries:</p>
+                <br />
+                <a href="#">Light Mode</a>
+                <a href="#">Dark Mode</a>
             </nav>
 
         </header>
@@ -47,5 +48,24 @@
             </article>
 
         </main>
+        <script>
+            // select the element to swap out with a new 
+            // type of berry
+            // when My favorite Berries" button is pressed
+            // a new berry type is added to the display
+            let berrySwap = document.getElementById('newBerry');
+
+            function myfunction(event) {
+                event.preventDefault();
+                console.log('Clicked');
+            }
+            // add an event listener
+            // mdn ref: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+            // declare the function to change the display
+            berrySwap.addEventListener('click', function (event){
+                berrySwap.getElementById('newBerry').innerText('One of my favorite berries are Raspberries');
+            }) 
+
+        </script>
     </body>
 </html>
